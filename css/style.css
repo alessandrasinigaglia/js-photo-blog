@@ -4,9 +4,13 @@
     margin: 0;
 }
 
+/*----------
+    HEADER
+-----------*/
 header {
     background-image: url("../img/wall.png");
-    min-height: 80px;
+    min-height: 90px;
+    padding: 15px;
 }
 
 .title {
@@ -14,3 +18,10 @@ header {
     justify-content: center;
 }
 
+/*----------
+    MAIN
+-----------*/
+
+main {
+    background-image: url("../img/cork.png");
+}
