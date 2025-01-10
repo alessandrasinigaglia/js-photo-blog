@@ -1,7 +1,7 @@
 //DOM ELM
 const cardContainer = document.getElementById('card');
 
-//FUNCION
+//FUNCTION
 function getCard() {
     axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
         .then(function (response) {
@@ -25,3 +25,4 @@ function getCard() {
 
 getCard()
 
+//EVENT
