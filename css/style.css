@@ -55,12 +55,31 @@ img {
     width: 100%;
     height: 100%;
     z-index: 20;
-    background-color: rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 110px;
+    left: 0;
+
+}
+
+#overlay-img {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    margin: auto;
 }
 
 .hidden {
     display: none;
 }
 
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 30;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
