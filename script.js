@@ -26,21 +26,4 @@ function getCard() {
 
 getCard()
 
-//EVENT
-function addZoomEvents() {
-    const zoomableImages = document.querySelectorAll('.overlay');
-    zoomableImages.forEach(img => {
-        img.addEventListener('click', () => {
-            img.classList.add('overlay');
-        });
-    });
-
-    document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('overlay')) {
-            e.target.classList.remove('overlay');
-        }
-    });
-}
-
-// Chiamata della funzione per ottenere le card
-getCard();
+//EVENTS
