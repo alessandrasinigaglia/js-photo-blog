@@ -13,7 +13,8 @@ function getCard() {
 
             cardContainer.innerHTML += `
              <div class="col-lg-4 col-sm-6 col-12 p-2">
-                <div class="card col bg-light p-3 mt-4">
+                <div class="card col bg-light p-3 mt-4 position-relative">
+                <img class="pin" src="img/pin.svg" alt="pin">
                     <img src="${img}" alt="immagine API" class="img-fluid">
                     <p class="mt-2">${title}</p>
                 </div>
@@ -26,3 +27,20 @@ function getCard() {
 getCard()
 
 //EVENT
+function addZoomEvents() {
+    const zoomableImages = document.querySelectorAll('.overlay');
+    zoomableImages.forEach(img => {
+        img.addEventListener('click', () => {
+            img.classList.add('overlay');
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('overlay')) {
+            e.target.classList.remove('overlay');
+        }
+    });
+}
+
+// Chiamata della funzione per ottenere le card
+getCard();
