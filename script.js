@@ -35,9 +35,6 @@ function getCard() {
                 });
             });
         })
-        .catch(function (error) {
-            console.error('Error fetching cards:', error);
-        });
 }
 
 const closeOverlay = () => {
